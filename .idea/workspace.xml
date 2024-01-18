@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Initial commit of code (WIP)">
+    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Initial working implementation of WordFrequencyCountService">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cat-results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cat-wikipedia.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/long-line-file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/weird-formatting.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/UnitTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/UnitTestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/quick-brown-fox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/quick-brown-fox-jumbled.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.WordFrequencyCountServiceTest.executor": "Run",
+    "JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam….executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.frequencyMatches.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -55,12 +60,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
@@ -76,6 +84,24 @@
       <option name="PACKAGE_NAME" value="com.soheb.AdaptavistTask.service" />
       <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam…" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdaptavistTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soheb.AdaptavistTask.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soheb.AdaptavistTask.service" />
+      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest]/[test-template:freqMatches(java.lang.String, java.util.Map)]/[test-template-invocation:#5]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,6 +125,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WordFrequencyCountServiceTest" />
+        <item itemvalue="JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam…" />
         <item itemvalue="JUnit.WordFrequencyCountServiceTest.frequencyMatches" />
       </list>
     </recent_temporary>
@@ -119,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
-      <workItem from="1705601034293" duration="2575000" />
+      <workItem from="1705601034293" duration="6681000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -137,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705602837823</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial working implementation of WordFrequencyCountService">
+      <option name="closed" value="true" />
+      <created>1705603642954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705603642954</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit of code (WIP)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of code (WIP)" />
+    <MESSAGE value="Initial working implementation of WordFrequencyCountService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial working implementation of WordFrequencyCountService" />
   </component>
 </project>

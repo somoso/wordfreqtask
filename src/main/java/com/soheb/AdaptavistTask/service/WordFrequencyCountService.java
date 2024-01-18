@@ -12,16 +12,30 @@ public class WordFrequencyCountService {
         Map<String, Long> frequency = new HashMap<>();
         try (Scanner scanner = new Scanner(toRead)) {
             while (scanner.hasNext()) {
-                String word = scanner.next().toLowerCase();
-                if (frequency.containsKey(word)) {
-                    long count = frequency.get(word);
-                    count++;
-                    frequency.put(word, count);
-                } else {
-                    frequency.put(word, 1L);
+                var sanitisedWord = sanitiseWord(scanner);
+                if (sanitisedWord.isBlank()) {
+                    continue;
                 }
+                collectWordFrequency(frequency, sanitisedWord);
             }
         }
         return frequency;
     }
+
+    private String sanitiseWord(Scanner scanner) {
+        var word = scanner.next().toLowerCase();
+        return word.replaceAll("[^A-Z-a-z]*","");
+    }
+
+    private void collectWordFrequency(Map<String, Long> frequency, String sanitisedWord) {
+        if (frequency.containsKey(sanitisedWord)) {
+            long count = frequency.get(sanitisedWord);
+            count++;
+            frequency.put(sanitisedWord, count);
+        } else {
+            frequency.put(sanitisedWord, 1L);
+        }
+    }
+
+    
 }
