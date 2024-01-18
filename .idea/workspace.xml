@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Added check for null, added extra test cases for extra cases">
+    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Integrated shade plugin to build binary jar file">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/FileServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -39,11 +41,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TaskRunner (with file).executor": "Run",
+    "Application.TaskRunner.executor": "Run",
     "JUnit.FileServiceTest.executor": "Run",
     "JUnit.FileServiceTest.returnsValidFileForValidPath.executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam….executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.frequencyMatches.executor": "Debug",
+    "JUnit.service in AdaptavistTask.executor": "Run",
+    "Maven.AdaptavistTask [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -53,7 +59,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -67,8 +73,38 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.soheb.AdaptavistTask.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileServiceTest">
+  <component name="RunManager" selected="Application.TaskRunner (with file)">
+    <configuration name="TaskRunner (with file)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.TaskRunner" />
+      <module name="AdaptavistTask" />
+      <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Documents/Console.txt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soheb.AdaptavistTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.TaskRunner" />
+      <module name="AdaptavistTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soheb.AdaptavistTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdaptavistTask" />
       <extension name="coverage">
@@ -115,47 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam…" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="service in AdaptavistTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdaptavistTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soheb.AdaptavistTask.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.soheb.AdaptavistTask.service" />
-      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest]/[test-template:freqMatches(java.lang.String, java.util.Map)]/[test-template-invocation:#5]" />
-      </uniqueIds>
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordFrequencyCountServiceTest.frequencyMatches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdaptavistTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soheb.AdaptavistTask.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.soheb.AdaptavistTask.service" />
-      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.service.WordFrequencyCountServiceTest" />
-      <option name="METHOD_NAME" value="frequencyMatches" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.TaskRunner (with file)" />
+      <item itemvalue="Application.TaskRunner" />
+      <item itemvalue="JUnit.FileServiceTest" />
+      <item itemvalue="JUnit.FileServiceTest.returnsValidFileForValidPath" />
+      <item itemvalue="JUnit.service in AdaptavistTask" />
+      <item itemvalue="JUnit.WordFrequencyCountServiceTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TaskRunner" />
+        <item itemvalue="JUnit.service in AdaptavistTask" />
         <item itemvalue="JUnit.FileServiceTest" />
         <item itemvalue="JUnit.FileServiceTest.returnsValidFileForValidPath" />
         <item itemvalue="JUnit.WordFrequencyCountServiceTest" />
-        <item itemvalue="JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam…" />
-        <item itemvalue="JUnit.WordFrequencyCountServiceTest.frequencyMatches" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +194,7 @@
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
       <workItem from="1705601034293" duration="6681000" />
-      <workItem from="1705607884066" duration="1923000" />
+      <workItem from="1705607884066" duration="4612000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -226,7 +244,63 @@
       <option name="project" value="LOCAL" />
       <updated>1705609689145</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented extra cases">
+      <option name="closed" value="true" />
+      <created>1705609840145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705609840145</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Decided to use Exception for greater clarity">
+      <option name="closed" value="true" />
+      <created>1705610661461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705610661461</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implemented PrettyPrinterService">
+      <option name="closed" value="true" />
+      <created>1705610996163</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705610996163</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add main class that joins it all together">
+      <option name="closed" value="true" />
+      <created>1705611026750</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705611026750</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Clean up code">
+      <option name="closed" value="true" />
+      <created>1705611038477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705611038477</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Integrated the code into TaskRunner class">
+      <option name="closed" value="true" />
+      <created>1705611059087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705611059087</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Integrated shade plugin to build binary jar file">
+      <option name="closed" value="true" />
+      <created>1705611325577</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705611325577</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +313,13 @@
     <MESSAGE value="Added extra unit tests for weird cases" />
     <MESSAGE value="Implemented FileService" />
     <MESSAGE value="Added check for null, added extra test cases for extra cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added check for null, added extra test cases for extra cases" />
+    <MESSAGE value="Implemented extra cases" />
+    <MESSAGE value="Decided to use Exception for greater clarity" />
+    <MESSAGE value="Implemented PrettyPrinterService" />
+    <MESSAGE value="Add main class that joins it all together" />
+    <MESSAGE value="Clean up code" />
+    <MESSAGE value="Integrated the code into TaskRunner class" />
+    <MESSAGE value="Integrated shade plugin to build binary jar file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrated shade plugin to build binary jar file" />
   </component>
 </project>
