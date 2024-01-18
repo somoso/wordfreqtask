@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Added extra unit tests for weird cases">
+    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Implemented FileService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/FileServiceTest.java" afterDir="false" />
@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.FileServiceTest.executor": "Run",
     "JUnit.FileServiceTest.returnsValidFileForValidPath.executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam….executor": "Run",
@@ -67,7 +68,22 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileServiceTest.returnsValidFileForValidPath">
+  <component name="RunManager" selected="JUnit.FileServiceTest">
+    <configuration name="FileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdaptavistTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soheb.AdaptavistTask.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soheb.AdaptavistTask.service" />
+      <option name="MAIN_CLASS_NAME" value="com.soheb.AdaptavistTask.service.FileServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileServiceTest.returnsValidFileForValidPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdaptavistTask" />
       <extension name="coverage">
@@ -135,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileServiceTest" />
         <item itemvalue="JUnit.FileServiceTest.returnsValidFileForValidPath" />
         <item itemvalue="JUnit.WordFrequencyCountServiceTest" />
         <item itemvalue="JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam…" />
@@ -159,7 +176,7 @@
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
       <workItem from="1705601034293" duration="6681000" />
-      <workItem from="1705607884066" duration="977000" />
+      <workItem from="1705607884066" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -193,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705608533101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented FileService">
+      <option name="closed" value="true" />
+      <created>1705608882872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705608882872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +229,7 @@
     <MESSAGE value="Initial commit of code (WIP)" />
     <MESSAGE value="Initial working implementation of WordFrequencyCountService" />
     <MESSAGE value="Added extra unit tests for weird cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added extra unit tests for weird cases" />
+    <MESSAGE value="Implemented FileService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented FileService" />
   </component>
 </project>
