@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Integrated shade plugin to build binary jar file">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Add README file">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +193,7 @@
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
       <workItem from="1705601034293" duration="6681000" />
-      <workItem from="1705607884066" duration="4612000" />
+      <workItem from="1705607884066" duration="4688000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -300,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705611325577</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add README file">
+      <option name="closed" value="true" />
+      <created>1705612531051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705612531051</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +327,7 @@
     <MESSAGE value="Clean up code" />
     <MESSAGE value="Integrated the code into TaskRunner class" />
     <MESSAGE value="Integrated shade plugin to build binary jar file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated shade plugin to build binary jar file" />
+    <MESSAGE value="Add README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README file" />
   </component>
 </project>

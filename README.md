@@ -10,7 +10,7 @@ You will need:
 
 * Java 17
 
-It would be idea to have:
+It would be nice to have:
 
 * IntelliJ IDEA
 
