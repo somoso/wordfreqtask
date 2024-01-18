@@ -2,10 +2,13 @@ package com.soheb.AdaptavistTask.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Map;
@@ -23,7 +26,7 @@ class WordFrequencyCountServiceTest {
 
     @ParameterizedTest
     @MethodSource("provideForFrequencyMatches")
-    void freqMatches(String resourceName, Map<String, Long> expectedMapping) throws IOException {
+    void bulkFrequencyMatchesTest(String resourceName, Map<String, Long> expectedMapping) {
         var file = UnitTestUtil.getResource(resourceName);
         var frequency = wfcs.getWordFrequency(file);
         for (Map.Entry<String, Long> entry : expectedMapping.entrySet()) {
@@ -31,6 +34,29 @@ class WordFrequencyCountServiceTest {
             Assertions.assertEquals(entry.getValue(), frequency.get(entry.getKey()), "Assertion failed for '%s'".formatted(entry.getKey()));
         }
         Assertions.assertEquals(frequency.size(), expectedMapping.size());
+    }
+
+    @Test
+    void givesEmptyMapForBadFile() {
+        var file = UnitTestUtil.getResource("placekitten.jpg");
+        var frequency = wfcs.getWordFrequency(file);
+        Assertions.assertTrue(frequency.isEmpty());
+    }
+
+    @Test
+    void givesEmptyMapForNonExistentFile() {
+        var file = new File("/tmp/this_file_should_not_exist.txt");
+        if (file.exists()) {
+            Assertions.fail("This file really shouldn't exist!! It defeats the purpose of the test!!");
+        }
+        var frequency = wfcs.getWordFrequency(file);
+        Assertions.assertTrue(frequency.isEmpty());
+    }
+
+    @Test
+    void givesEmptyMapForNullFile() {
+        var frequency = wfcs.getWordFrequency(null);
+        Assertions.assertTrue(frequency.isEmpty());
     }
 
     private static Stream<Arguments> provideForFrequencyMatches() {

@@ -8,18 +8,29 @@ import java.util.Scanner;
 
 public class WordFrequencyCountService {
 
-    public Map<String, Long> getWordFrequency(File toRead) throws FileNotFoundException {
-        Map<String, Long> frequency = new HashMap<>();
-        try (Scanner scanner = new Scanner(toRead)) {
-            while (scanner.hasNext()) {
-                var sanitisedWord = sanitiseWord(scanner);
-                if (sanitisedWord.isBlank()) {
-                    continue;
-                }
-                collectWordFrequency(frequency, sanitisedWord);
-            }
+    public Map<String, Long> getWordFrequency(File toRead) {
+        if (toRead == null) {
+            // I would love to add a logging library like Slf4j for logging, but now I'll be spitting errors to stderr.
+            System.err.println("No file to parse");
+            return Map.of();
         }
-        return frequency;
+        try {
+            Map<String, Long> frequency = new HashMap<>();
+            try (Scanner scanner = new Scanner(toRead)) {
+                while (scanner.hasNext()) {
+                    var sanitisedWord = sanitiseWord(scanner);
+                    if (sanitisedWord.isBlank()) {
+                        continue;
+                    }
+                    collectWordFrequency(frequency, sanitisedWord);
+                }
+            }
+            return frequency;
+        } catch (FileNotFoundException | IllegalArgumentException  e) {
+            // I would love to add a logging library like Slf4j for logging, but now I'll be spitting errors to stderr.
+            System.err.println("Failed to parse words: " + e.getMessage());
+            return Map.of();
+        }
     }
 
     private String sanitiseWord(Scanner scanner) {

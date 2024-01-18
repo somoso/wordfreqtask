@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Initial working implementation of WordFrequencyCountService">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cat-results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cat-wikipedia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/long-line-file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/weird-formatting.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/quick-brown-fox.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/quick-brown-fox-jumbled.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.WordFrequencyCountServiceTest.executor": "Run",
-    "JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam….executor": "Run",
-    "JUnit.WordFrequencyCountServiceTest.frequencyMatches.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/soheb/Code/AdaptavistTask/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.WordFrequencyCountServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WordFrequencyCountServiceTest.freqMatches.[5] cat-wikipedia.txt, {german=1, functions=2, taras=1, resemble=1, owners=2, explanation=3, buds=3, diverged=1, without=5, these=17, introduced=3, would=4, protected=1, virgin=1, victor=1, legs=4, energy=1, wins=1, trauma=1, methylbutan=1, successfully=1, pica=1, flightless=1, notably=1, sexually=2, switzerland=1, '=1, possess=3, neutral=2, bubastis=1, scratch=1, analysis=3, volunteers=1, apparent=1, size=5, protective=2, dawn=1, sideways=1, much=5, poorly=2, achieve=1, example=2, result=3, arrived=2, rejects=1, currents=1, sam….executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WordFrequencyCountServiceTest.frequencyMatches.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/soheb/Code/AdaptavistTask/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -147,6 +141,7 @@
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
       <workItem from="1705601034293" duration="6681000" />
+      <workItem from="1705607884066" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
