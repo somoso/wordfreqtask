@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/TaskRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/FileServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/UnitTestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test2.txt" afterDir="false" />
+    <list default="true" id="a084ce06-ea74-4907-80e3-912509371fae" name="Changes" comment="Initial commit of code (WIP)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soheb/AdaptavistTask/service/WordFrequencyCountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/UnitTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/UnitTestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/soheb/AdaptavistTask/service/WordFrequencyCountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.WordFrequencyCountServiceTest.executor": "Run",
     "JUnit.WordFrequencyCountServiceTest.frequencyMatches.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -124,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705600449544</updated>
       <workItem from="1705600450761" duration="577000" />
-      <workItem from="1705601034293" duration="1750000" />
+      <workItem from="1705601034293" duration="2575000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -134,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705600573564</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit of code (WIP)">
+      <option name="closed" value="true" />
+      <created>1705602837823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705602837823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Initial commit of code (WIP)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of code (WIP)" />
   </component>
 </project>
