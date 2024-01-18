@@ -1,5 +1,6 @@
 package com.soheb.AdaptavistTask.service;
 
+import com.soheb.AdaptavistTask.exception.InvalidFileException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,7 +25,7 @@ public class FileServiceTest {
     }
 
     @Test
-    void returnsValidFileForValidPath() {
+    void returnsValidFileForValidPath() throws InvalidFileException {
         var file = UnitTestUtil.getResource("quick-brown-fox.txt");
         var expectedFile = fileService.getValidFile(file.getAbsolutePath());
         Assertions.assertNotNull(expectedFile);
@@ -32,9 +33,9 @@ public class FileServiceTest {
     }
 
     @Test
-    void returnsNullForInvalidPath() {
-        var expectedFile = fileService.getValidFile("/this/file/does/not/exist");
-        Assertions.assertNull(expectedFile);
+    void returnsNullForInvalidPath() throws InvalidFileException {
+        Assertions.assertThrows(InvalidFileException.class, () ->
+                fileService.getValidFile("/this/file/does/not/exist"));
     }
 
     @Test
@@ -42,8 +43,10 @@ public class FileServiceTest {
         File folder = null;
         try {
             folder = Files.createTempDirectory("dummy").toFile();
-            var expectedFile = fileService.getValidFile(folder.getAbsolutePath());
-            Assertions.assertNull(expectedFile);
+            final File finalFolder = folder;
+            Assertions.assertThrows(InvalidFileException.class, () ->
+                    fileService.getValidFile(finalFolder.getAbsolutePath())
+            );
         } finally {
             if (folder != null) {
                 deleteTempFolder(folder.toPath());
@@ -60,8 +63,8 @@ public class FileServiceTest {
             FileAttribute<?> permissions = PosixFilePermissions.asFileAttribute(ownerWritable);
             tempPath = Files.createTempDirectory("dummy");
             var unreadableFile = Files.createFile(Path.of(tempPath.toFile().getAbsolutePath(), "tempy"), permissions);
-            var expectedFile = fileService.getValidFile(unreadableFile.toFile().getAbsolutePath());
-            Assertions.assertNull(expectedFile);
+            Assertions.assertThrows(InvalidFileException.class, () ->
+                    fileService.getValidFile(unreadableFile.toFile().getAbsolutePath()));
         } finally {
             if (tempPath != null) {
                 deleteTempFolder(tempPath);
