@@ -70,9 +70,10 @@ public class FileServiceTest {
     }
 
     private void deleteTempFolder(Path toDelete) throws IOException {
-        Files.walk(toDelete)
-                .sorted(Comparator.reverseOrder())
-                .map(Path::toFile)
-                .forEach(File::delete);
+        try (var deleteStream = Files.walk(toDelete)) {
+                deleteStream.sorted(Comparator.reverseOrder())
+                    .map(Path::toFile)
+                    .forEach(File::delete);
+        }
     }
 }

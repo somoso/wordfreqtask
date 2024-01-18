@@ -9,6 +9,12 @@ public class FileService {
         if (!file.exists()) {
             return null;
         }
+        if (!file.isFile()) {
+            return null;
+        }
+        if (!file.canRead()) {
+            return null;
+        }
         return file;
     }
 }
